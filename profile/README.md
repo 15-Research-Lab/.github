@@ -1,58 +1,63 @@
-[![15 Research Lab: the physical layer. Shop work at a fraction of what it costs you now.](https://www.15researchlab.com/github-banner.jpg)](https://www.15researchlab.com)
+[![15 Research Lab: the physical layer.](https://www.15researchlab.com/github-banner.jpg)](https://www.15researchlab.com)
 
-**The physical layer.**
+**A 1,200 square foot physical-layer shop being built in San Francisco.**
+One operator, four service lanes. This account holds the design work and the
+research artifacts.
 
-A 1,200 square foot industrial shop opening in San Francisco. One operator, six
-machines, four service lanes. You bring a work order. You leave with the part,
-the report, or the board. No equity, no batch, no application.
+> **Status: pre-commissioning.** Space and equipment are gated on funding.
+> Everything below is design work and data that exists today. Nothing on the
+> hardware side has been physically qualified yet, and where that is true it
+> says so rather than being implied away.
 
-### Shop work at a fraction of what it costs you now
+## The four lanes
 
-| Lane | Here | Elsewhere |
+**Electronics and same-day PCBA.** Pick-and-place, hand and BGA rework, and a
+test-and-measurement bench. Same-day board respins against the one-to-three-week
+offshore loop, plus infrared scanning of a powered board to localise the part
+dissipating more than it should.
+
+**Robotics test.** Dynamometer axes, torque cells and an endurance station.
+Torque against speed, thermal derating measured under the duty cycle you actually
+intend to run, and backlash measured rather than quoted from a datasheet.
+
+**Silicon and failure analysis.** Wire bonding, encapsulation removal,
+cross-sectioning and lock-in thermography. Per-part pricing for the gap between
+university cleanrooms that need badge access and OSAT vendors that need a lot
+minimum.
+
+**Instrumentation and ground truth.** Flash thermography, ultrasonically verified
+reference defect panels, and an agent that operates the instrument and writes the
+report. Built to produce labeled physical ground truth for machine-learning
+evaluation, which is the part of the pipeline that is usually synthetic.
+
+## What exists today
+
+| Workstream | State | What it is |
 | :--- | :--- | :--- |
-| Wire bonding and failure analysis | **$30 to $80** per chip, no minimum | $1,500 to $5,000 OSAT lot minimum |
-| Instrument repair and calibration | **$395** flat, same week | $623 and up, thirty days |
-| Instrumentation and ground truth | **$8,500** for the GT-1 instrument | $45,000 and up for a flash thermography system |
-| Actuator and joint characterization | **$1,500 to $3,000** per report | about a hundred times that to buy and run the stand |
+| **Bench Node A2** | Digital prep complete | RP2040, USB-C, isolated RS-485, INA226, MAX31856, strain-gauge expansion, two protected outputs, isolated trigger I/O, hardware thermal inhibition. Editable KiCad, Gerbers, 141-part BOM and CPL, factory instructions, firmware and host tools. Factory acceptance and physical commissioning outstanding. |
+| **Motor controller** | In progress | Four layers, 12 to 48 V, 40 A design target. RP2350, three-phase bridge, inline current sensing, CAN-FD / RS-485 / USB-C, encoder interfaces, independent hardware overcurrent and thermal shutdown. Revision D carries 392 source components against an original 150-part target, so cost and assembly need a separate evaluation. |
+| **Shop layout** | Digital prep complete | Dimensioned 1,200 sqft plan: equipment placement, electrical schedule, ventilation, storage, ESD and receiving. Site and commissioning evidence outstanding. |
+| **E-01 development kit** | Digital prep complete | Native parametric CAD, 49-row BOM, 28 reviewed drawing and manual pages. Fit, strength, cabling and calibrated trajectories unqualified; blocked configurations recorded rather than dropped. |
+| **Dyno rig** | Digital prep complete | Mechanical CAD, guards, mounts, couplings, assembly and alignment package, acceptance checker. Motor interface adoption pending. |
+| **Quality binder** | Digital prep complete | SOPs, calibration records, service procedures and qualification documentation. |
+| **Synthetic thermography corpus** | Digital prep complete | Labeled simulated defect sequences plus evaluation methodology, built to be replaced by real-panel validation. Synthetic results retain their measured numerical and detection limits. |
 
-Every comparison is a published rate or a quoted minimum, not an estimate.
+## Published research
 
-### The rate board
+| | DOI |
+| :--- | :--- |
+| Grokking Has Finite Capacity | [10.5281/zenodo.19346536](https://doi.org/10.5281/zenodo.19346536) |
+| Side-Channel Exfiltration and Narrative Erosion in Frontier Language Models | [10.5281/zenodo.19346069](https://doi.org/10.5281/zenodo.19346069) |
+| The Verbosity Premium | [10.5281/zenodo.19346709](https://doi.org/10.5281/zenodo.19346709) |
 
-| Service | Rate |
-| :--- | ---: |
-| Same-day PCB assembly and rework | $200-400 /board |
-| EMC pre-compliance scan | $400-600 |
-| Thermal cycling run | $150-300 |
-| Board thermal scan, find the hot part | $100-150 |
-| Incubator / centrifuge / microscope repair | $395 flat |
-| Instrument calibration, traceable | $75-300 /unit |
-| Actuator characterization report | $1,500-3,000 |
-| CNC machining, fixtures, enclosures | $75-125 /hr |
-| Wire bonding and packaging | $30-80 /chip |
-| Laser marking and serialization | $5-15 /part |
-| IR audit, NFPA 70B annual scan | $1,500-2,500 /day |
-| Compliance pentest, SOC 2 scoped | $2,500-4,500 |
-| Certified defect panel, UT-verified | $800-1,500 |
-| Agent testbed access | $500-1,000 /day |
+Repositories on this account carry the machine-readable side of that work:
+attack/alignment mappings and AI-control monitor evaluation harnesses.
 
-Full board, with an estimator: **[15researchlab.com](https://www.15researchlab.com/#prices)**
+## Rates
 
-### Why it costs less
-
-Not in your bill: a sales team, a quoting process, an account manager between you
-and the person holding the tool, a lot minimum written to protect a production
-line you are not using, a venture return priced into the hour, or equity.
-
-### Status
-
-The counter is not open yet. Every rate is posted in advance and held at opening.
-**[Join the waitlist](https://www.15researchlab.com/#waitlist)**
-
-### Repositories
-
-Research artifacts produced on the bench. The shop is the business; these are the
-receipts.
+Every service rate is posted publicly, in advance, at
+**[15researchlab.com](https://www.15researchlab.com/#prices)**. The counter is
+not open yet; there is a waitlist.
 
 ---
 
