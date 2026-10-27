@@ -62,4 +62,5 @@ not open yet; there is a waitlist.
 ---
 
 San Francisco &middot; [15researchlab.com](https://www.15researchlab.com) &middot;
-hello@15researchlab.com &middot; an [Authensor](https://www.authensor.com) initiative
+hello@15researchlab.com &middot; an [Authensor](https://www.authensor.com) initiative &middot;
+founded by [John Daniel Kearney](https://johndanielkearney.com)
